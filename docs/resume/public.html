@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume-header-public</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  /* h1:hover { */
+  /*     background-color: #757575; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  /* h2:hover { */
+  /*     background-color: #397249; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      font-weight: bold;
+  }
+  dd {
+      margin-left: 17%;
+      margin-bottom:7px;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+
+  table {
+      width: 100%;
+  }
+  </style>
+</head>
+<body>
+<h1 id="raymond-gauthier">Raymond Gauthier</h1>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.linkedin.com/in/jraygauthier">linkedin.com/in/jraygauthier</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="education">Education</h2>
+<dl>
+<dt>2004-2008</dt>
+<dd><p><strong>Bachelor’s Degree, Computer Engineering</strong>; Sherbrooke University (Sherbrooke)</p>
+<p><em>Robotic &amp; AI concentration</em></p>
+</dd>
+<dt>2002-2004</dt>
+<dd><strong>College Diploma, Pure And Applied Science</strong>; Cégep Lévis-Lauzon (Lévis)
+</dd>
+</dl>
+<h2 id="work-experience">Work Experience</h2>
+<h3 id="amotus-solutions-dimonoff-québec">Amotus Solutions / Dimonoff (Québec)</h3>
+<p><em>Senior Software Developer</em>, Sept 2017 - Present</p>
+<h4 id="client-3-sep-2019---today">Client 3 (Sep 2019 - Today)</h4>
+<p>An embedded power metering device running multiple Dbus interconnected Python3 services hosted on a custom Yocto linux distribution that pushes its acquired data cloud side through a google cloud platform MQTT channel taken over by a JS cloud function that stores data to both Firestore and BigQuery. A cloud side PHP dashboard manages / exposes / leverage device metering data. Devices are individually configurable through a local webui accessible via: USB Gadget, Ethernet and recently even a ZeroTier VPN.</p>
+<p><em>Responsibilities</em>:</p>
+<ul>
+<li>Technical SW lead, release manager, sprint planning and lead.</li>
+<li>Taking technical requirements from the client, proposing plans to carry out these requirement and finer grained splits and evaluations.</li>
+<li>Take over device’s Yocto configuration evolution.</li>
+</ul>
+<p><em>Major achievements</em>:</p>
+<ul>
+<li>Design and code a simple webui app (Aiohttps, Jina2) with login to configure devices.</li>
+<li>Design and code a socket and generator schedule service with a frontend component added to the above webui.</li>
+<li>Reproduce embedded environment as faithfully as possible on dev linux PC through a reproducible Nix environment not only including Python dependencies but also non-Python system dependencies.</li>
+<li>Various minor features additions and bug fixes.</li>
+<li>Incremental redesign or the numerous services (taken over from the initial prototype).</li>
+<li>Incremental code base modularization, moving service common code to a common well-designed modular library package.</li>
+<li>Incremental code base typechecking using mypy.</li>
+<li>Increase embedded backend services coverage to ~90% allowing both fake (on pc) and real hw test (on embedded) testing even dbus service inter-communication.</li>
+<li>Migrate project packaging from Setuptools to Poetry.</li>
+</ul>
+<p><em>Technological Environment</em>: Python 3 (Pytest, Mypy, Asyncio, Aiohttp, Jinja2), Yocto, Dbus, Systemd, USB gadgets, Html, JS, Css, Docker, Docker-compose, Google Cloud Services (Cloud functions, Firestore, Big Query), PHP, PostgreSQL.</p>
+<h4 id="client-2-sep-2020---dec-2020">Client 2 (Sep 2020 - Dec 2020)</h4>
+<p>A client internal inventory management and tracking system implemented as a C# Blazor app working with MS SQL Db data through a well-designed C# MVC RestAPI. Accoring to client specification, Amotus exclusively designed and developed an embedded C# Xamarin bar code scanner application connected to the same RestAPI facilitating inventory product management / manipulations.</p>
+<p><em>Responsibilities</em>:</p>
+<ul>
+<li>Work with client and client in-house developer / architect to improve upon a C# MVC / Blazor app prototype they developed.</li>
+<li>Work on an agreed upon set of tasks, refining requirements and weekly demoing results to client.</li>
+</ul>
+<p><em>Major achievements</em>:</p>
+<ul>
+<li>Document, design and implement first best practice example of form error validations leveraging FluentValidation, MiddleWare and Blazor so that backend errors properly bubble up to user (on a per field basis when the case) and that real-time frontend side validations in Blazor C# are made possible.</li>
+<li>Design and implement proper internationalization of the overall application so that language selection made through the Blazer App is made available to the separate MVC App implementing the RestAPI.<br />
+</li>
+<li>Design and implement proper user Authentication and Authorization system both preventing unauthenticated use of the system and allowing access to current logged-in user in all layers (Blazor browser/backend side and MVC app). RestAPI protected using JWT Token. All this done leveraging at all layers following new .NET core best security practices.</li>
+<li>Understand and document tooling to perform by the books migrations of existing EntityFramework MS SQL database supporting colleague with first required migration.</li>
+<li>Adapt existing windows only application so that it can easily be run and developed on a linux PC nix reproducible environment, leveraging new .NET Core linux support to its full extent. Includes proper reproducible VSCode setup with <code>ms-dotnettools.csharp</code> based on <code>OmniSharp</code>.</li>
+</ul>
+<p><em>Technological Environment</em>: C#, .NET Core, Entity Framework, MVC RestAPI, Blazor, FluentValidation, MS SQL, Docker, Docker-compose, Nix, C# Xamarin.</p>
+<h4 id="client-1-sep-2017---oct-2020">Client 1 (Sep 2017 - Oct 2020)</h4>
+<p>A medical device running a client (JS) / server (async Python) application hosted on a custom Linux / Nixos distribution. Overall goal was to configure a MCU trigging a camera, a spectrometer, a laser and some LEDs collecting the camera / spectrometer frames trough usb making sure not to lose sync. Collected frames would then be bundled as whole cycles and send in real-time to the JS frontend through websockets while being persisted for later sync with the cloud storage service.</p>
+<p><em>Responsibilities</em>:</p>
+<ul>
+<li>Taking technical requirements from the client, proposing plans to carry out these requirement and finer grained splits and evaluations.</li>
+<li>Architecture and code a sub-system orchestrating the overall acquisition process of the system reconciling various sensors including a framework allowing client’s own developers to safely develop sequenced or parallel asynchronous real-time high-level algorithms operating on the acquired data with two possible kind of effect: sensor data alteration and actuator control.</li>
+<li>Custom Linux distro and tools to factory install the devices with the custom distro. These tools include a bi-directional update system allowing secure deployment of secrets and much more.</li>
+<li>Multiple cli helper utilities program for semi-automated system administration, factory install and support. Tools were developed both in bash and python and exposed through <code>PATH</code> via a nix package / dev environment.</li>
+<li>Reproducible development environment using the nix package manager.</li>
+<li>Thorough integration tests for the overall acquisition process using pytest.</li>
+<li>Very precise unit tests for both acquisition devices leading to multiple fixes by third parties (TIS and Hamamatsu).</li>
+<li>Multiple improvements to the backend application, particularly in terms of real time and offline configuration for the acquisition process.</li>
+<li>Migrate existing application from python2 to python3.</li>
+<li>Add optional static types to the code base using mypy to improve scale and maintainability of the project.</li>
+<li>Add missing packages to the open source nixpkgs package set and improve existing when required.</li>
+<li>Documenting the acquisition process, the custom distro and the development tools required to work with the project.</li>
+<li>Document restAPI requirements for the IoT cloud storage service using Haskell servant library and swagger so that chosen third party can provide required end points to store the acquired data.</li>
+</ul>
+<p><em>Technological Environment</em>: Python3 / Python2 (Mypy, Pytest, Asyncio, etc), Sqlite, Haskell (servant DSL), Swagger, Html, CSS, JS, AngularJS, Linux Nixos, Bash , Gnu Tools, Nix, Nixpkgs, Git, Markdown (pandoc), Sphinx.</p>
+<h3 id="innovmetric-québec">Innovmetric (Québec)</h3>
+<p><em>C++ Software Developer</em>, Aug 2016 - Sept 2017</p>
+<ul>
+<li>Improving a complex existing metrology application used by most if not all car / plane companies according to spec (including challenging the spec) in 7-9 scrum teams. Very well implemented agile methodology (including the developed feature presentation) and overarching strategy to maintain a huge code base by huge team of developers. Thorough integration testing strategy through software specific macro system.</li>
+</ul>
+<p><em>Technological Environment</em>: C++14, Windows, MFC, Mercurial, Visual Studio 2015, huge set of private libraries.</p>
+<h3 id="ungava-technologies-québec">Ungava Technologies (Québec)</h3>
+<p><em>C++/Qt Embedded Software Developer</em>, Jun 2013 - July 2016</p>
+<ul>
+<li>Developped an optionnal dynamically loaded plugin system to allow our clients to easily extend our embedded application with their own <em>C++/Qt</em> views and algorithms. Designed to provide strong backward source/binary compatibility garrantees and maximize possible customizations.</li>
+<li>Direct contact with the client, multiple design presentations, announces of new feature, in depth technical explanations, details evaluations and independent project management.</li>
+<li>Modularized / refactored a initialy non-modular <em>C++/Qt</em> executable to accelerate developments.</li>
+<li>Design of multiple public and private libraries (e.g.: missing standard library utilities, cartesian geometry, sensing types, configuration, hardware capabilities description and many others) all with their own unit tests and documentation.</li>
+<li>Add multiple new feature to the system through agile methodology through heavy use of unit tests and when necessary using gui experiments.</li>
+<li>Fixed multiple bugs.</li>
+<li>Thorough testing of the embedded device using full <em>NDT</em> setups (probe, part, scanner, etc). Description of the observations, assumptions and hypothesises.</li>
+<li>Augmented qmake build system so that it is easier to work with multiple library dependencies (&gt;30). Deferred to some python scripts for dependency order resolution.</li>
+<li>Augmented our development machines with <em>Nix/Nixpkgs</em> so that our team’s development configuration can be reproduced and customized robustly.</li>
+<li>Developped a customized documentation system on top of <em>Doxygen</em> that can work in a modular way and allows references betweens documentation components.</li>
+<li>Developped a method to facilitate development across multiple repositories of any types (now mostly using <em>Git</em>).</li>
+</ul>
+<p><em>Technological Environment</em>: C/C++, Qt, QMake, Embedded Linux (Yocto), NDT systems, Doxygen, Markdown, PlantUML, Graphviz, Haskell Diagrams, Latex Math, Pandoc/Gitit/Hakyll, Mediawiki, QtCreator, Ubuntu/Nix/Nixos, Bash / Gnu Tools, Haskell, Python, Html/CSS/Javascript, Git, Svn, Bitbucket, Jenkins, Apache</p>
+<h3 id="bentley-systems-inc.-beauport">Bentley Systems, Inc. (Beauport)</h3>
+<p><em>C++ Software Developer</em>, Jun 2009 - Jun 2013</p>
+<ul>
+<li>Increased georeferencing and reprojection facilities by adding support for WKT standard fitted CS and local CS</li>
+<li>Created an import framework supporting multi-layered, georeferenced, multi-dimensional and polimorphic data</li>
+<li>Storage and import of multi-resolution and single-resolution DTM data</li>
+<li>Increased STL functionality</li>
+<li>Increased smart pointers functionality and security</li>
+<li>Created ATP tests for ImageLib API in order to preserve its functionality when core was replaced by ImagePP</li>
+<li>Created an ATP framework designed to facilitate comparison of actual system results with a specified baseline</li>
+<li>Image processing (tiling, stripping, filtering, etc)</li>
+<li>File formats support</li>
+</ul>
+<p><em>Technological Environment</em>: C/C++, ImagePP framework, ATP framework, Visual Studio .NET 2005/2008, Microstation, Descartes, WinCVS, Bentley Build, Mercurial</p>
+<h3 id="bluberi-drummondville">Bluberi (Drummondville)</h3>
+<p><em>C Software Developer</em>, Mar 2009 - Jun 2009</p>
+<ul>
+<li>C Development of 2D casino games optimized for company specific boards.</li>
+<li>Undertook the whole formation/training in order to be able to perform the task.</li>
+</ul>
+<p><em>Technological Environment</em>: C, Visual Studio .NET 2005, Custom Casino Boards</p>
+<h3 id="bentley-systems-inc.-beauport-1">Bentley Systems, Inc. (Beauport)</h3>
+<p><em>C++ Software Developer (Intern T4)</em>, May 2008 - Aug 2008</p>
+<ul>
+<li>Develop/integrate new file formats in ImagePP framework</li>
+<li>Fix/adapt ImagePP integration as new core for ImageLib API so that the library behave in at least the same way or better than former core</li>
+<li>Fix multiple arte-facts/bugs (TRs) in Raster Manager and Descartes products</li>
+<li>Attend courses on 3d design with Microstation(tools usage guidelines, rendering, new functionalities to be delivered with next release, etc.)</li>
+</ul>
+<p><em>Technological Environment</em>: C/C++, Visual Studio .NET 2005, Microstation, WinCVS,</p>
+<h3 id="cae-inc.-montréal">CAE Inc. (Montréal)</h3>
+<p><em>C++ Software Developer (Intern T3)</em>, Sep 2007 - Dec 2007</p>
+<ul>
+<li>Develop/integrate/test new visual functionalities (new specs for luminous points display, geodetic positions selection, etc.)</li>
+<li>Fix multiples arte-facts/bugs of greater complexity</li>
+</ul>
+<p><em>C++ Software Developer (Intern T2)</em>, Sep 2006 - Dec 2006</p>
+<ul>
+<li>Analyze / apply solutions for reducing application memory footprint and raise actual limits</li>
+<li>Develop/design an API enabling memory footprint reports for individual modules of the application layer</li>
+<li>Fix multiple arte-facts/bugs on the graphical application</li>
+</ul>
+<p><em>Technological Environment</em>: C/C++, Java, Visual Studio .NET 2003, Borland JBuilder, Flight Simulators, Multithread programming, Shared Memory, Unicode vs ANSI, StarTeam, Visual Basic Application, Smart Heap</p>
+<h3 id="promutuel-québec">Promutuel (Québec)</h3>
+<p><em>Java Software Developer (Intern T1)</em>, Jan 2006 - Apr 2006</p>
+<ul>
+<li>Develop servlet-based applications following specifications from a functional document</li>
+<li>Develop embedded web scripts</li>
+<li>Perform unit-tests</li>
+</ul>
+<p><em>Assistant to the re-ingineering of business processes (Intern T0)</em>, May 2005 - Aug 2005</p>
+<ul>
+<li>Help/guide remote distance employee with their PC related problems</li>
+<li>Design/develop interactive forms</li>
+<li>Compile orally specified or written procedures using UML notation</li>
+</ul>
+<p><em>Technological Environment</em>: Java 1.4.2, WSAD (Eclipse 2.0), Struts-Tiles Framework, JUNIT, JSP, JavaScript, Adobe Designer</p>
+<h2 id="technical-experience">Technical Experience</h2>
+<dl>
+<dt>Work on my personal private cloud</dt>
+<dd><p>Hosted on <strong>Amazon EC2</strong> through multiple <strong>Nixos</strong> linux machines, 2015-2016</p>
+<ul>
+<li>Declarative deployment using <em>Nixops</em></li>
+<li>Declarative machines configuration using <em>Nixos/Nix</em></li>
+<li>Static code serving, proxying using <em>Nginx</em></li>
+<li>Static website compilation from <em>Markdown</em> using <em>Hakyll</em></li>
+<li>Dynamic textual data provisionning using <em>Git</em> repositories and <em>Systemd units</em> dependencies to ensure data availability prior to dependent units / services.</li>
+<li>Custom private <em>Markdown</em> wiki using customized <em>Gitit</em> through <em>Haskell</em> plugins for figure rendering (e.g.: PlantUml, Haskell Diagrams, etc).</li>
+<li>Added a modern <em>javascript</em> frontend for wiki page edition to my gitit instances that provides side-by-side editor / preview pane with fast automatic html preview rendering.</li>
+<li>Currently working with <em>Haskell Servant</em> library to develop a nice statically typed web api. Also evaluated <em>Haskell Yesod</em>.</li>
+<li>Currently use a secure communication channel through <em>HTTPS</em> using a <em>self-signed certificate</em>. However, I’m about to integrate with the <em>Lets Encrypt</em> system in order to get <em>full-fledged and free certificates</em>.</li>
+</ul>
+</dd>
+<dt>Open Source</dt>
+<dd><p><strong>Nixpkgs:</strong> Multiple contributions to the default package/configurations set of Nix/Nixos, 2015-2021</p>
+<p>All of my personal and work computers are now using <em>Nixos</em>. Over the time, added multiple packages to <em>Nixpkgs</em> and fixed multiple issues. Doing this made me pretty fluent with the open source development process.</p>
+</dd>
+<dt>Programming Languages</dt>
+<dd><p><strong>Python:</strong></p>
+<p>Worked with libraries: asyncio, tornado and many others.</p>
+</dd>
+<dd><p><strong>C++:</strong></p>
+<p>Worked with libraries: Qt, boost, wxWidget, OpenGL, MFC and many others.</p>
+</dd>
+<dd><p><strong>Nix:</strong></p>
+<p>Build many tools using nix over the years in order to make builds reproducible anywhere.</p>
+</dd>
+<dd><p><strong>Haskell:</strong></p>
+<p>Worked with libraries: servant, pandoc, diagrams, wx-haskell, reactive-banana, turtle, yesod, happstack, aeson, pipes and many others.</p>
+</dd>
+<dd><p><strong>Good knowledge of:</strong> Javascript, Bash, Java, Matlab</p>
+</dd>
+<dd><p><strong>Basic knowledge of:</strong> Python, Visual Basic, Cuda</p>
+</dd>
+<dt>Dev env</dt>
+<dd><p><strong>OSes</strong>:</p>
+<p>Linux, Windows</p>
+</dd>
+<dd><p><strong>Build systems</strong>:</p>
+<p>Qmake, gnu make, CMake, cabal</p>
+</dd>
+<dd><p><strong>VCS</strong>:</p>
+<p>Git, Mercurial, Svn, Cvs</p>
+</dd>
+<dd><p><strong>IDE</strong>:</p>
+<p>Vscode, QtCreator, Microsoft Visual Studio, EMacs, xCode, KDevelop, Eclipse, JBuilder</p>
+</dd>
+<dt>Continuing education</dt>
+<dd><p>Functional programming related:</p>
+<ul>
+<li>Reading of many Functional Programming / Haskell papers, 2014-2016</li>
+<li>Haskell custom file format conversion tool using parsec, 2014</li>
+<li>Reading of “Haskell school of music” book and experimented with examples, 2014-2015</li>
+<li>Reading of “Real World Haskell” book and experimentation with its examples, 2014</li>
+</ul>
+</dd>
+<dd><p>Object oriented programming related:</p>
+<ul>
+<li>Read multiple C++ books abour good practices and design, 2006-2014</li>
+<li>OpenGL learning project reading the “Red Book” ( C/C++ ), 2007-2008</li>
+<li>Custom parallel port activity logger ( C++, MFC ), 2006-2007</li>
+<li>Create some new Half-Life2 entities with custom behavior ( C++ ), 2006</li>
+<li>Self-taught object oriented C++ learning, 2002</li>
+<li>Self-taught Visual Basic, 2000</li>
+</ul>
+</dd>
+<dd><p>Miscellaneous:</p>
+<ul>
+<li>Coursea - Critical Thinking in Global Challenges course, 2013</li>
+</ul>
+</dd>
+<dt>University projects</dt>
+<dd><p><strong>Neurospike Project</strong>, 2008</p>
+<p>C++, optimization of the C++ reference implementation of an image recognition neural network using a NVidia tesla server (Cuda) and development of a real-time debugger / analyzer of its internals (wxWidget and OpenGL).</p>
+</dd>
+<dd><p><strong>Design of a distributed system</strong>, 2007</p>
+<p>Java, RMI, Architecture MVC</p>
+</dd>
+<dd><p><strong>Design of an embedded system with networking</strong>, 2007</p>
+<p>C, uC-OSII (RTOS), TCP/IP stack, protocole HDLC RF link, interrupts, UARTS, microcontroller interfacing, timers, ARM architecture, cygwin</p>
+</dd>
+<dd><p><strong>Design of a customized drink distribution machine</strong>, 2006</p>
+<p>Java, Cervelets, Tiniboard (embedded system), network, electronic interfaces, fully functional prototype</p>
+</dd>
+<dd><p><strong>Conception d’un brouilleur de signal</strong>, 2005</p>
+<p>C++, XILINX, data transfer protocol, logical gates et Qt GUI</p>
+</dd>
+<dd><p><strong>Conception d’un robot interagissant avec son environnement</strong>, 2004</p>
+<p>C, Handiboard, electronic interfaces (lecteur DC et autres)</p>
+</dd>
+</dl>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<ul>
+<li><p>Certifications and Professional Memberships <em>Ordre des ingénieurs du Québec</em> Received on Sep 23, 2009. Ended membership since 2014.</p></li>
+<li><p>Spoken/written languages:</p>
+<p>French (5/5), English (5/5)</p></li>
+</ul>
+</body>
+</html>
