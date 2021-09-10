@@ -5,8 +5,11 @@ The source code for my personal github page available at
 <https://jraygauthier.github.io>.
 
 
+Todo
+----
 
-[available *en français*]: https://amotus.github.io/jrg-slides-plantuml/
+See separate [todo page](./TODO.md).
+
 
 License
 -------
