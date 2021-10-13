@@ -20,6 +20,14 @@ A glimpse of my open source work at:
  -  [List of personal github public repositories]
 
 
+## Donations
+
+I am currently supporting:
+
+ -  [Nixos](https://opencollective.com/nixos)
+ -  [TED](https://www.ted.com/about/our-organization/how-ted-works/giving-to-ted)
+
+
 ## License
 
 Please look at [README] for licensing information.
