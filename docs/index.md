@@ -26,6 +26,7 @@ I am currently supporting:
 
  -  [Nixos](https://opencollective.com/nixos)
  -  [TED](https://www.ted.com/about/our-organization/how-ted-works/giving-to-ted)
+ -  [Wikipedia](https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=CA&uselang=en&utm_medium=sidebar&utm_source=donate&utm_campaign=C13_en.wikipedia.org)
 
 
 ## License
