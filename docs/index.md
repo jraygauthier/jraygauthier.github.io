@@ -13,6 +13,20 @@ Welcome to my personal github page.
  -  [Pdf](./resume/public.pdf)
 
 
+## Continuous learning
+
+### Certificates
+
+ -  [2022/03/01 - Udemy - Rust: Building Reusable Code with Rust from Scratch](./docs/training-certificates/20220301_Udemy-Rust-Building-Reusable-Code-with-Rust-from-Scratch.pdf)
+ -  [2022/01/28 - Udemy - The Rust Programming Language](./docs/training-certificates/20220128_Udemy-The-Rust-Programming-Language.pdf)
+ -  [2013/04/08 - Coursera - Critical Thinking in Global Challenges](./docs/training-certificates/20130408_Coursera-CriticalThinkinginGlobalChallenges.pdf)
+
+
+### Books
+
+Upcoming.
+
+
 ## Open source work
 
 A glimpse of my open source work at:
