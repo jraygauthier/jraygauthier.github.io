@@ -267,7 +267,7 @@
 <h3 id="amotus-solutions-dimonoff-québec">Amotus Solutions / Dimonoff (Québec)</h3>
 <p><em>Senior Software Developer</em>, Sept 2017 - Present</p>
 <h4 id="client-3-sep-2019---today">Client 3 (Sep 2019 - Today)</h4>
-<p>An embedded power metering device running multiple Dbus interconnected Python3 services hosted on a custom Yocto linux distribution that pushes its acquired data cloud side through a google cloud platform MQTT channel taken over by a JS cloud function that stores data to both Firestore and BigQuery. A cloud side PHP dashboard manages / exposes / leverage device metering data. Devices are individually configurable through a local webui accessible via: USB Gadget, Ethernet and recently even a ZeroTier VPN.</p>
+<p>An embedded power metering device running multiple Dbus interconnected Python3 services hosted on a custom Yocto Linux distribution that pushes its acquired data cloud side through a google cloud platform MQTT channel taken over by a JS cloud function that stores data to both Firestore and BigQuery. A cloud side PHP dashboard manages / exposes / leverage device metering data. Devices are individually configurable through a local web UI accessible via: USB Gadget, Ethernet and recently even a ZeroTier VPN.</p>
 <p><em>Responsibilities</em>:</p>
 <ul>
 <li>Technical SW lead, release manager, sprint planning and lead.</li>
@@ -276,19 +276,20 @@
 </ul>
 <p><em>Major achievements</em>:</p>
 <ul>
-<li>Design and code a simple webui app (Aiohttps, Jina2) with login to configure devices.</li>
-<li>Design and code a socket and generator schedule service with a frontend component added to the above webui.</li>
-<li>Reproduce embedded environment as faithfully as possible on dev linux PC through a reproducible Nix environment not only including Python dependencies but also non-Python system dependencies.</li>
+<li>A nice CLI application based written in Rust and cross compiled from Linux to Windows to simplify the deployment of custom Yocto distributions to target embedded devices. Tool shipped via a Linux produced <code>*.msi</code> installer, thanks to nice open source <code>msitools</code> project.</li>
+<li>Design and code a simple web UI app (Aiohttps, Jinja2) with login to configure devices.</li>
+<li>Design and code a socket and generator schedule service with a frontend component added to the above web UI.</li>
+<li>Reproduce embedded environment as faithfully as possible on developer Linux PC through a reproducible Nix environment not only including Python dependencies but also non-Python system dependencies.</li>
 <li>Various minor features additions and bug fixes.</li>
 <li>Incremental redesign or the numerous services (taken over from the initial prototype).</li>
 <li>Incremental code base modularization, moving service common code to a common well-designed modular library package.</li>
-<li>Incremental code base typechecking using mypy.</li>
-<li>Increase embedded backend services coverage to ~90% allowing both fake (on pc) and real hw test (on embedded) testing even dbus service inter-communication.</li>
+<li>Incremental code base <em>type checking</em> using mypy.</li>
+<li>Increase embedded backend services coverage to ~90% allowing both fake (on pc) and real HW test (on embedded) testing even dbus service inter-communication.</li>
 <li>Migrate project packaging from Setuptools to Poetry.</li>
 </ul>
-<p><em>Technological Environment</em>: Python 3 (Pytest, Mypy, Asyncio, Aiohttp, Jinja2), Yocto, Dbus, Systemd, USB gadgets, Html, JS, Css, Docker, Docker-compose, Google Cloud Services (Cloud functions, Firestore, Big Query), PHP, PostgreSQL.</p>
+<p><em>Technological Environment</em>: Python 3 (Pytest, Mypy, Asyncio, Aiohttp, Jinja2), Rust, Yocto, Dbus, Systemd, USB gadgets, Html, JS, Css, Docker, Docker-compose, Google Cloud Services (Cloud functions, Firestore, Big Query), PHP, PostgreSQL.</p>
 <h4 id="client-2-sep-2020---dec-2020">Client 2 (Sep 2020 - Dec 2020)</h4>
-<p>A client internal inventory management and tracking system implemented as a C# Blazor app working with MS SQL Db data through a well-designed C# MVC RestAPI. Accoring to client specification, Amotus exclusively designed and developed an embedded C# Xamarin bar code scanner application connected to the same RestAPI facilitating inventory product management / manipulations.</p>
+<p>A client internal inventory management and tracking system implemented as a C# Blazor app working with MS SQL Db data through a well-designed C# MVC RestAPI. According to client specification, Amotus exclusively designed and developed an embedded C# Xamarin bar code scanner application connected to the same RestAPI facilitating inventory product management / manipulations.</p>
 <p><em>Responsibilities</em>:</p>
 <ul>
 <li>Work with client and client in-house developer / architect to improve upon a C# MVC / Blazor app prototype they developed.</li>
@@ -301,7 +302,7 @@
 </li>
 <li>Design and implement proper user Authentication and Authorization system both preventing unauthenticated use of the system and allowing access to current logged-in user in all layers (Blazor browser/backend side and MVC app). RestAPI protected using JWT Token. All this done leveraging at all layers following new .NET core best security practices.</li>
 <li>Understand and document tooling to perform by the books migrations of existing EntityFramework MS SQL database supporting colleague with first required migration.</li>
-<li>Adapt existing windows only application so that it can easily be run and developed on a linux PC nix reproducible environment, leveraging new .NET Core linux support to its full extent. Includes proper reproducible VSCode setup with <code>ms-dotnettools.csharp</code> based on <code>OmniSharp</code>.</li>
+<li>Adapt existing windows only application so that it can easily be run and developed on a Linux PC nix reproducible environment, leveraging new .NET Core Linux support to its full extent. Includes proper reproducible VSCode setup with <code>ms-dotnettools.csharp</code> based on <code>OmniSharp</code>.</li>
 </ul>
 <p><em>Technological Environment</em>: C#, .NET Core, Entity Framework, MVC RestAPI, Blazor, FluentValidation, MS SQL, Docker, Docker-compose, Nix, C# Xamarin.</p>
 <h4 id="client-1-sep-2017---oct-2020">Client 1 (Sep 2017 - Oct 2020)</h4>
@@ -310,8 +311,8 @@
 <ul>
 <li>Taking technical requirements from the client, proposing plans to carry out these requirement and finer grained splits and evaluations.</li>
 <li>Architecture and code a sub-system orchestrating the overall acquisition process of the system reconciling various sensors including a framework allowing client’s own developers to safely develop sequenced or parallel asynchronous real-time high-level algorithms operating on the acquired data with two possible kind of effect: sensor data alteration and actuator control.</li>
-<li>Custom Linux distro and tools to factory install the devices with the custom distro. These tools include a bi-directional update system allowing secure deployment of secrets and much more.</li>
-<li>Multiple cli helper utilities program for semi-automated system administration, factory install and support. Tools were developed both in bash and python and exposed through <code>PATH</code> via a nix package / dev environment.</li>
+<li>Custom Linux distribution and tools to factory install the devices with the custom distribution. These tools include a bi-directional update system allowing secure deployment of secrets and much more.</li>
+<li>Multiple cli helper utilities program for semi-automated system administration, factory install and support. Tools were developed both in bash and python and exposed through <code>PATH</code> via a nix package / developer environment.</li>
 <li>Reproducible development environment using the nix package manager.</li>
 <li>Thorough integration tests for the overall acquisition process using pytest.</li>
 <li>Very precise unit tests for both acquisition devices leading to multiple fixes by third parties (TIS and Hamamatsu).</li>
@@ -319,10 +320,10 @@
 <li>Migrate existing application from python2 to python3.</li>
 <li>Add optional static types to the code base using mypy to improve scale and maintainability of the project.</li>
 <li>Add missing packages to the open source nixpkgs package set and improve existing when required.</li>
-<li>Documenting the acquisition process, the custom distro and the development tools required to work with the project.</li>
+<li>Documenting the acquisition process, the custom distribution and the development tools required to work with the project.</li>
 <li>Document restAPI requirements for the IoT cloud storage service using Haskell servant library and swagger so that chosen third party can provide required end points to store the acquired data.</li>
 </ul>
-<p><em>Technological Environment</em>: Python3 / Python2 (Mypy, Pytest, Asyncio, etc), Sqlite, Haskell (servant DSL), Swagger, Html, CSS, JS, AngularJS, Linux Nixos, Bash , Gnu Tools, Nix, Nixpkgs, Git, Markdown (pandoc), Sphinx.</p>
+<p><em>Technological Environment</em>: Python3 / Python2 (Mypy, Pytest, Asyncio, etc), SQLite, Haskell (servant DSL), Swagger, Html, CSS, JS, AngularJS, Linux Nixos, Bash , Gnu Tools, Nix, Nixpkgs, Git, Markdown (pandoc), Sphinx.</p>
 <h3 id="innovmetric-québec">Innovmetric (Québec)</h3>
 <p><em>C++ Software Developer</em>, Aug 2016 - Sept 2017</p>
 <ul>
@@ -332,24 +333,24 @@
 <h3 id="ungava-technologies-québec">Ungava Technologies (Québec)</h3>
 <p><em>C++/Qt Embedded Software Developer</em>, Jun 2013 - July 2016</p>
 <ul>
-<li>Developped an optionnal dynamically loaded plugin system to allow our clients to easily extend our embedded application with their own <em>C++/Qt</em> views and algorithms. Designed to provide strong backward source/binary compatibility garrantees and maximize possible customizations.</li>
+<li>Developed an optional dynamically loaded plugin system to allow our clients to easily extend our embedded application with their own <em>C++/Qt</em> views and algorithms. Designed to provide strong backward source/binary compatibility guarantees and maximize possible customizations.</li>
 <li>Direct contact with the client, multiple design presentations, announces of new feature, in depth technical explanations, details evaluations and independent project management.</li>
-<li>Modularized / refactored a initialy non-modular <em>C++/Qt</em> executable to accelerate developments.</li>
+<li>Modularized / refactored an initially non-modular <em>C++/Qt</em> executable to accelerate developments.</li>
 <li>Design of multiple public and private libraries (e.g.: missing standard library utilities, cartesian geometry, sensing types, configuration, hardware capabilities description and many others) all with their own unit tests and documentation.</li>
 <li>Add multiple new feature to the system through agile methodology through heavy use of unit tests and when necessary using gui experiments.</li>
 <li>Fixed multiple bugs.</li>
-<li>Thorough testing of the embedded device using full <em>NDT</em> setups (probe, part, scanner, etc). Description of the observations, assumptions and hypothesises.</li>
-<li>Augmented qmake build system so that it is easier to work with multiple library dependencies (&gt;30). Deferred to some python scripts for dependency order resolution.</li>
+<li>Thorough testing of the embedded device using full <em>NDT</em> setups (probe, part, scanner, etc). Description of the observations, assumptions and hypotheses.</li>
+<li>Augmented Qmake build system so that it is easier to work with multiple library dependencies (&gt;30). Deferred to some python scripts for dependency order resolution.</li>
 <li>Augmented our development machines with <em>Nix/Nixpkgs</em> so that our team’s development configuration can be reproduced and customized robustly.</li>
-<li>Developped a customized documentation system on top of <em>Doxygen</em> that can work in a modular way and allows references betweens documentation components.</li>
-<li>Developped a method to facilitate development across multiple repositories of any types (now mostly using <em>Git</em>).</li>
+<li>Developed a customized documentation system on top of <em>Doxygen</em> that can work in a modular way and allows references between documentation components.</li>
+<li>Developed a method to facilitate development across multiple repositories of any types (now mostly using <em>Git</em>).</li>
 </ul>
 <p><em>Technological Environment</em>: C/C++, Qt, QMake, Embedded Linux (Yocto), NDT systems, Doxygen, Markdown, PlantUML, Graphviz, Haskell Diagrams, Latex Math, Pandoc/Gitit/Hakyll, Mediawiki, QtCreator, Ubuntu/Nix/Nixos, Bash / Gnu Tools, Haskell, Python, Html/CSS/Javascript, Git, Svn, Bitbucket, Jenkins, Apache</p>
 <h3 id="bentley-systems-inc.-beauport">Bentley Systems, Inc. (Beauport)</h3>
 <p><em>C++ Software Developer</em>, Jun 2009 - Jun 2013</p>
 <ul>
 <li>Increased georeferencing and reprojection facilities by adding support for WKT standard fitted CS and local CS</li>
-<li>Created an import framework supporting multi-layered, georeferenced, multi-dimensional and polimorphic data</li>
+<li>Created an import framework supporting multi-layered, georeferenced, multi-dimensional and polymorphic data</li>
 <li>Storage and import of multi-resolution and single-resolution DTM data</li>
 <li>Increased STL functionality</li>
 <li>Increased smart pointers functionality and security</li>
@@ -371,7 +372,7 @@
 <ul>
 <li>Develop/integrate new file formats in ImagePP framework</li>
 <li>Fix/adapt ImagePP integration as new core for ImageLib API so that the library behave in at least the same way or better than former core</li>
-<li>Fix multiple arte-facts/bugs (TRs) in Raster Manager and Descartes products</li>
+<li>Fix multiple artefacts/bugs (TRs) in Raster Manager and Descartes products</li>
 <li>Attend courses on 3d design with Microstation(tools usage guidelines, rendering, new functionalities to be delivered with next release, etc.)</li>
 </ul>
 <p><em>Technological Environment</em>: C/C++, Visual Studio .NET 2005, Microstation, WinCVS,</p>
@@ -379,13 +380,13 @@
 <p><em>C++ Software Developer (Intern T3)</em>, Sep 2007 - Dec 2007</p>
 <ul>
 <li>Develop/integrate/test new visual functionalities (new specs for luminous points display, geodetic positions selection, etc.)</li>
-<li>Fix multiples arte-facts/bugs of greater complexity</li>
+<li>Fix multiples artefacts/bugs of greater complexity</li>
 </ul>
 <p><em>C++ Software Developer (Intern T2)</em>, Sep 2006 - Dec 2006</p>
 <ul>
 <li>Analyze / apply solutions for reducing application memory footprint and raise actual limits</li>
 <li>Develop/design an API enabling memory footprint reports for individual modules of the application layer</li>
-<li>Fix multiple arte-facts/bugs on the graphical application</li>
+<li>Fix multiple artefacts/bugs on the graphical application</li>
 </ul>
 <p><em>Technological Environment</em>: C/C++, Java, Visual Studio .NET 2003, Borland JBuilder, Flight Simulators, Multithread programming, Shared Memory, Unicode vs ANSI, StarTeam, Visual Basic Application, Smart Heap</p>
 <h3 id="promutuel-québec">Promutuel (Québec)</h3>
@@ -395,7 +396,7 @@
 <li>Develop embedded web scripts</li>
 <li>Perform unit-tests</li>
 </ul>
-<p><em>Assistant to the re-ingineering of business processes (Intern T0)</em>, May 2005 - Aug 2005</p>
+<p><em>Assistant to the re-engineering of business processes (Intern T0)</em>, May 2005 - Aug 2005</p>
 <ul>
 <li>Help/guide remote distance employee with their PC related problems</li>
 <li>Design/develop interactive forms</li>
@@ -405,13 +406,13 @@
 <h2 id="technical-experience">Technical Experience</h2>
 <dl>
 <dt>Work on my personal private cloud</dt>
-<dd><p>Hosted on <strong>Amazon EC2</strong> through multiple <strong>Nixos</strong> linux machines, 2015-2016</p>
+<dd><p>Hosted on <strong>Amazon EC2</strong> through multiple <strong>Nixos</strong> Linux machines, 2015-2016</p>
 <ul>
 <li>Declarative deployment using <em>Nixops</em></li>
 <li>Declarative machines configuration using <em>Nixos/Nix</em></li>
 <li>Static code serving, proxying using <em>Nginx</em></li>
 <li>Static website compilation from <em>Markdown</em> using <em>Hakyll</em></li>
-<li>Dynamic textual data provisionning using <em>Git</em> repositories and <em>Systemd units</em> dependencies to ensure data availability prior to dependent units / services.</li>
+<li>Dynamic textual data provisioning using <em>Git</em> repositories and <em>Systemd units</em> dependencies to ensure data availability prior to dependent units / services.</li>
 <li>Custom private <em>Markdown</em> wiki using customized <em>Gitit</em> through <em>Haskell</em> plugins for figure rendering (e.g.: PlantUml, Haskell Diagrams, etc).</li>
 <li>Added a modern <em>javascript</em> frontend for wiki page edition to my gitit instances that provides side-by-side editor / preview pane with fast automatic html preview rendering.</li>
 <li>Currently working with <em>Haskell Servant</em> library to develop a nice statically typed web api. Also evaluated <em>Haskell Yesod</em>.</li>
@@ -439,7 +440,7 @@
 </dd>
 <dd><p><strong>Basic knowledge of:</strong> Python, Visual Basic, Cuda</p>
 </dd>
-<dt>Dev env</dt>
+<dt>Development environment</dt>
 <dd><p><strong>OSes</strong>:</p>
 <p>Linux, Windows</p>
 </dd>
@@ -463,7 +464,7 @@
 </dd>
 <dd><p>Object oriented programming related:</p>
 <ul>
-<li>Read multiple C++ books abour good practices and design, 2006-2014</li>
+<li>Read multiple C++ books about good practices and design, 2006-2014</li>
 <li>OpenGL learning project reading the “Red Book” ( C/C++ ), 2007-2008</li>
 <li>Custom parallel port activity logger ( C++, MFC ), 2006-2007</li>
 <li>Create some new Half-Life2 entities with custom behavior ( C++ ), 2006</li>
@@ -473,7 +474,7 @@
 </dd>
 <dd><p>Miscellaneous:</p>
 <ul>
-<li>Coursea - Critical Thinking in Global Challenges course, 2013</li>
+<li>Coursera - Critical Thinking in Global Challenges course, 2013</li>
 </ul>
 </dd>
 <dt>University projects</dt>
