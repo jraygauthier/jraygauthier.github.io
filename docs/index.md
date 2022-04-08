@@ -17,9 +17,9 @@ Welcome to my personal github page.
 
 ### Certificates
 
- -  [2022/03/01 - Udemy - Rust: Building Reusable Code with Rust from Scratch](./docs/training-certificates/20220301_Udemy-Rust-Building-Reusable-Code-with-Rust-from-Scratch.pdf)
- -  [2022/01/28 - Udemy - The Rust Programming Language](./docs/training-certificates/20220128_Udemy-The-Rust-Programming-Language.pdf)
- -  [2013/04/08 - Coursera - Critical Thinking in Global Challenges](./docs/training-certificates/20130408_Coursera-CriticalThinkinginGlobalChallenges.pdf)
+ -  [2022/03/01 - Udemy - Rust: Building Reusable Code with Rust from Scratch](./training-certificates/20220301_Udemy-Rust-Building-Reusable-Code-with-Rust-from-Scratch.pdf)
+ -  [2022/01/28 - Udemy - The Rust Programming Language](./training-certificates/20220128_Udemy-The-Rust-Programming-Language.pdf)
+ -  [2013/04/08 - Coursera - Critical Thinking in Global Challenges](./training-certificates/20130408_Coursera-CriticalThinkinginGlobalChallenges.pdf)
 
 
 ### Books
