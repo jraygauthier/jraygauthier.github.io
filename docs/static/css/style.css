@@ -1,3 +1,7 @@
+body {
+  /* Fix pandoc's too narrow body style */
+  max-width: none
+}
 
 .main {
   /* Add a top margin to avoid content overlay */

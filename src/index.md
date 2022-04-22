@@ -7,7 +7,7 @@ nav:
 ---
 
 My name is Raymond Gauthier, I am a Senior Software Developer with high interest
-in open source software. You might also know me as `jraygauthier` which is the
+in open source software. You might also know me as [`jraygauthier`] which is the
 pseudonym I use on the web.
 
 From this page, you should be able to find everything you need to know about my
@@ -16,6 +16,9 @@ professional experiences and interests, starting with my CV / resume.
 Please use [linkedin] if you want to discuss work related topics.
 
 [linkedin]: https://www.linkedin.com/in/jraygauthier/
+
+[`jraygauthier`]: https://github.com/jraygauthier
+
 
 ## Curriculum vitae / resume
 
