@@ -47,6 +47,15 @@ A glimpse of my open source work at:
  -  [List of github public repositories]
 
 
+## Presentation
+
+A couple of presentations I gave at my day job and was allowed to publish.
+Note that only available *en français* at this time.
+
+ -  [Veille techno - PlantUML](https://jraygauthier.github.io/jrg-slides-plantuml/)
+ -  [Midi Amotus - Blazor Overview](https://jraygauthier.github.io/jrg-slides-blazor-overview/)
+
+
 ## Donations
 
 I am currently supporting:
