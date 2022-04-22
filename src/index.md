@@ -1,5 +1,6 @@
 ---
 title: Raymond Gauthier's personal page
+author: Raymond Gauthier
 ---
 
 Welcome to my personal github page.
@@ -42,7 +43,7 @@ I am currently supporting:
 
 ## License
 
-Please look at [README] for licensing information.
+Please look at [README] for more detailed licensing information.
 
 Source code for this page is available under [Repository].
 

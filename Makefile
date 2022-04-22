@@ -5,6 +5,9 @@ SRC_TEMPLATE_DIR := $(MKF_DIR)/src/template
 OUT_HTML_DIR := $(MKF_DIR)/out-html
 PUB_DIR := $(MKF_DIR)/docs
 
+COPYRIGHT_YEAR = $(shell date "+%Y")
+
+
 .PHONY: \
   all clean \
   publish \
@@ -29,6 +32,7 @@ html: \
 	  --template "$(SRC_TEMPLATE_DIR)/html/default.html" \
 	  --toc \
 	  --from markdown --to html5 \
+	  --variable="copyright-year:$(COPYRIGHT_YEAR)" \
 	  -o "$(OUT_HTML_DIR)/index.html" \
 	  "$(SRC_DIR)/index.md"
 
