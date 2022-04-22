@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Raymond Gauthier's personal page
-author: Raymond Gauthier
-date: 2021/09/01
 ---
 
 Welcome to my personal github page.

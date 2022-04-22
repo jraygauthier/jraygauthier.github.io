@@ -1,0 +1,324 @@
+
+.main {
+  /* Add a top margin to avoid content overlay */
+  /* Same as the height of the nav-top + default body margin of 8 */
+  margin-top: 88px;
+  /* Same as the width of the sidebar */
+  margin-left: 220px;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Same as the height of the nav-top + default body margin of 8 */
+  scroll-padding-top: 88px;
+}
+
+div.clear { clear: left; }
+span.clear { clear: left; display: block; }
+
+.nav-all {
+  background-color: #333;
+}
+
+.nav-topside-intersection {
+  overflow: hidden;
+  background-color: #008080;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0; /* Position the navbar at the top of the page */
+  width: 220px;
+  height: 80px;
+  z-index: 3; /* Stay on top of both nav-top and nav-side */
+}
+
+.nav-topside-intersection a {
+  color: #f2f2f2;
+  padding: 8px 8px 8px 8px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+}
+
+/*
+.nav-topside-intersection a:hover {
+  background: #ddd;
+  color: black;
+}
+*/
+
+img#nav-topside-intersection-logo {
+  height: 64px;
+}
+
+
+/* The navigation bar */
+.nav-top-header {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0px; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 80px;
+  z-index: 2; /* Stay on top of nav-side */
+}
+
+.nav-top-header a {
+  float: left;
+  display: block;
+  font-size: 17px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-top-tabs {
+  overflow: hidden;
+  margin-left: 220px;
+}
+
+.nav-top-mtabs {
+  overflow: hidden;
+  background-color: #333;
+  height: 48px;
+}
+
+.nav-top-mtabs-left-content {
+  overflow: hidden;
+  float: left;
+}
+
+/* Right-aligned section inside the top navigation */
+.nav-top-mtabs-right-content {
+  overflow: hidden;
+  float: right;
+}
+
+.nav-top-mtabs a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.nav-side a:visited {
+  color: black;
+}
+
+.nav-top-mtabs a.active {
+  background-color: rgb(243, 243, 243);
+  color: black;
+  font-weight: bold;
+}
+
+.nav-top-mtabs a.active:hover {
+  background: #ddd;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-top-stabs {
+  overflow: hidden;
+  background-color: rgb(243, 243, 243);
+  height: 32px;
+}
+
+.nav-top-stabs a {
+  float: left;
+  display: block;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  padding: 7px 30px;
+  text-decoration: none;
+  border-width: 1px;
+  border-color: black;
+  border-left-style: inset;
+}
+
+.nav-top-stabs a.nav-top-stab-0 {
+  border-left-style: none;
+}
+
+.nav-top-stabs a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.nav-top-stabs a:visited {
+  color: black;
+}
+
+.nav-top-stabs a.active {
+  background: rgb(243, 243, 243);
+  color: black;
+  font-weight: bold;
+}
+
+.nav-top-stabs a.active:hover {
+  background: #ddd;
+  color: black;
+  font-weight: bold;
+}
+
+/* The sidebar menu */
+.nav-side {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 220px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0px; /* Stay at the top */
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.nav-side-content {
+  margin-top: 80px;
+  padding: 0px 0px 0px 0px;
+  /* Adjust to keep ourselves aligned with logo.
+     Adjust below level-x a accordingly */
+  margin-left: 15px
+}
+
+.nav-side ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.nav-side li > ul {
+  padding-left: 15px;
+}
+
+.nav-side a {
+  padding: 6px 8px 6px 8px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+  color: #f2f2f2;
+  display: block;
+}
+
+.nav-side a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.nav-side a:visited {
+  color: #f7e2e2;
+}
+
+
+
+.nav-side-level-0 a {
+  /* Equal to 'nav-side-content' margin-left.
+     This is meant so that our background spans from the very
+     beginning of the container div. */
+  margin-left: -15px;
+  padding-left: 15px;
+}
+
+.nav-side-level-1 a {
+  /* Increase from level-0 by the amout of 'li > ul' padding-left. */
+  margin-left: -30px;
+  padding-left: 30px;
+}
+
+.nav-side-level-2 a {
+  /* Same as level-1 */
+  margin-left: -45px;
+  padding-left: 45px;
+}
+
+.nav-side-level-3 a {
+  /* Same as level-2 */
+  margin-left: -60px;
+  padding-left: 60px;
+}
+
+.error {
+  color: white;
+  background-color: #900;
+}
+
+.warning {
+  color: black;
+  background-color: yellow;
+}
+
+.info {
+  color: black;
+  background-color: lightblue;
+}
+
+.success {
+  color: white;
+  background-color: green;
+}
+
+
+.notification-item {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+
+.notification-item.active {
+  padding: 0.3em;
+}
+
+.page-notification-area {
+  /* Extend over left and right body margins */
+  /* TODO: Add some margin above and below.
+     For some odd reason, adding a single px add much more..
+  */
+  margin: 0px -8px 0px -8px;
+  padding: 0px 8px 0px 8px;
+  background-color: #ffcccb
+}
+
+/*
+.field-notification-area {
+  padding: 0.3em;
+  background-color: #ffcccb
+}
+*/
+
+a.nav-side-notification-error {
+  background-color: #ffcccb;
+  color: black;
+  font-weight: bold
+}
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+   /* Same as the height of the nav-top */
+  top: 80px;
+}
+
+
+span.page-notification-area-button {
+  float: right;
+  /*display: inline-block;*/
+  margin: 2px 2px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: #333;
+  color: #f2f2f2;
+}
+
+
+span.page-notification-area-button:hover {
+  float: right;
+  /*display: inline-block;*/
+  border-radius: 5px;
+  margin: 2px 2px;
+  padding: 2px 5px;
+  background: white;
+  color: black;
+  cursor:pointer;
+}
+
