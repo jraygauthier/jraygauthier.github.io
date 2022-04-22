@@ -47,7 +47,7 @@ A glimpse of my open source work at:
  -  [List of github public repositories]
 
 
-## Presentation
+## Presentations
 
 A couple of presentations I gave at my day job and was allowed to publish.
 Note that only available *en français* at this time.
