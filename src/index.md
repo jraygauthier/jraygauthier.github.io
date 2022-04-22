@@ -44,7 +44,7 @@ Upcoming.
 
 A glimpse of my open source work at:
 
- -  [List of personal github public repositories]
+ -  [List of github public repositories]
 
 
 ## Donations
@@ -63,6 +63,6 @@ Please look at [README] for more detailed licensing information.
 Source code for this page is available under [Repository].
 
 
-[List of personal github public repositories]: https://github.com/jraygauthier?tab=repositories
+[List of github public repositories]: https://github.com/jraygauthier?tab=repositories
 [README]: https://github.com/jraygauthier/jraygauthier.github.io/blob/master/README.md
 [Repository]: https://github.com/jraygauthier/jraygauthier.github.io
