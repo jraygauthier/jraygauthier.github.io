@@ -1,10 +1,23 @@
 ---
-title: Raymond Gauthier's personal page
+title-prefix: Raymond Gauthier
+title: Professional home page
+nav: 
+    master-tab: Professional
+    sub-tab: Home
 ---
 
-Welcome to my personal github page.
+My name is Raymond Gauthier, I am a Senior Software Developer with high interest
+in open source software. You might also know me as `jraygauthier` which is the
+pseudonym I use on the web.
 
-## Resume
+From this page, you should be able to find everything you need to know about my
+professional experiences and interests, starting with my CV / resume.
+
+Please use [linkedin] if you want to discuss work related topics.
+
+[linkedin]: https://www.linkedin.com/in/jraygauthier/
+
+## Curriculum vitae / resume
 
  -  [Html](./resume/public.html)
  -  [Pdf](./resume/public.pdf)

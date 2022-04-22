@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
 <head>
-  <link rel="stylesheet" href="./static/css/style.css" />
   <link rel="icon" href="./static/img/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/x-icon">
   <script src="./static/js/main.js"></script>
   <meta charset="utf-8" />
@@ -26,10 +25,7 @@ $endif$
 $for(css)$
   <link rel="stylesheet" href="$css$" />
 $endfor$
-<!--Fix pandoc's too narrow body style-->
-<style>
-  body {max-width: none}
-</style>
+<link rel="stylesheet" href="./static/css/style.css" />
 $for(header-includes)$
   $header-includes$
 $endfor$
@@ -51,16 +47,16 @@ $endif$
       <div class="nav-top-tabs">
         <div class="nav-top-mtabs">
           <span class="nav-top-mtabs-left-content">
-            <a class="active" href="#">Professional</a>
+            <a class="active" href="#">$nav.master-tab$</a>
           </span>
           <span class="nav-top-mtabs-right-content">
-            <!-- <a href="#">MyRTab1</a> -->
+            <a href="https://github.com/jraygauthier/jraygauthier.github.io">Source code</a>
           </span>
           <span class="clear"></span>
         </div>
         <div class="nav-top-stabs">
           <span class="nav-top-stabs-content">
-            <a class="active nav-top-stab-0" href="#">Home</a>
+            <a class="active nav-top-stab-0" href="#">$nav.sub-tab$</a>
           </span>
           <span class="clear"></span>
         </div>
@@ -69,14 +65,9 @@ $endif$
   </div>
   <div class="nav-side">
     <div class="nav-side-content">
-      <ul class="nav-side-level-0">
-        <li>
-          <a href="#">Professional</a>
 $if(toc)$
 $table-of-contents$
 $endif$
-        </li>
-      </ul>
     </div>
   </div>
   <div id="content" class="main">
