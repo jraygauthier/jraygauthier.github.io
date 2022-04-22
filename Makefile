@@ -6,7 +6,7 @@ OUT_HTML_DIR := $(MKF_DIR)/out-html
 PUB_DIR := $(MKF_DIR)/docs
 
 COPYRIGHT_YEAR = $(shell date "+%Y")
-
+COPYRIGHT_AUTHOR = Raymond Gauthier
 
 .PHONY: \
   all clean \
@@ -33,6 +33,7 @@ html: \
 	  --toc \
 	  --from markdown --to html5 \
 	  --variable="copyright-year:$(COPYRIGHT_YEAR)" \
+	  --variable="copyright-author:$(COPYRIGHT_AUTHOR)" \
 	  -o "$(OUT_HTML_DIR)/index.html" \
 	  "$(SRC_DIR)/index.md"
 

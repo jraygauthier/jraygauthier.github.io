@@ -1,6 +1,5 @@
 ---
 title: Raymond Gauthier's personal page
-author: Raymond Gauthier
 ---
 
 Welcome to my personal github page.
